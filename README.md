@@ -49,3 +49,21 @@ By combining these methods, the project enables advanced visual understanding an
    ```bash
    git clone https://github.com/TamannaAlam/Multi_Dimensional_Visual_Analysis.git
    cd Multi_Dimensional_Visual_Analysis
+2. Set Up the Environment
+Create and activate a virtual environment:
+
+```bash
+# Create the environment
+python -m venv venv
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Activate (Linux/macOS)
+source venv/bin/activate
+
+3. Install Dependencies
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
