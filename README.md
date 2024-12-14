@@ -62,8 +62,5 @@ venv\Scripts\activate
 # Activate (Linux/macOS)
 source venv/bin/activate
 
-3. Install Dependencies
-Install the required libraries:
 
-```bash
-pip install -r requirements.txt
+
