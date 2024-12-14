@@ -56,6 +56,7 @@ Create and activate a virtual environment:
 # Create the environment
 python -m venv venv
 
+
 # Activate (Windows)
 venv\Scripts\activate
 
