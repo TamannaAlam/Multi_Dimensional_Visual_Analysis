@@ -57,11 +57,3 @@ Step 1: Depth Estimation with DepthAnythingV2
 ```bash
 python depth_estimation.py --image_path <path_to_image>
 
-
-
-
-
-
-
-
-
