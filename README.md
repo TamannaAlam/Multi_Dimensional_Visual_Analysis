@@ -1,59 +1,51 @@
 # Multi-Dimensional Visual Analysis
+This repository showcases a multi-modal approach for visual analysis using cutting-edge tools for depth estimation, segmentation, and object detection.
 
-## 📚 Table of Contents
-1. [Project Overview](#project-overview)
-2. [Features and Tools](#features-and-tools)
-3. [Installation and Setup](#installation-and-setup)
-4. [Workflow](#workflow)
-5. [Usage Instructions](#usage-instructions)
-6. [Outputs and Visualizations](#outputs-and-visualizations)
-7. [Acknowledgments](#acknowledgments)
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Usage](#usage)
+   - [Depth Map Estimation (Depth Anything V2)](#depth-map-estimation-depth-anything-v2)
+   - [Segmentation (Segment Anything)](#segmentation-segment-anything)
+   - [Fast Lightweight Segmentation (FastSAM)](#fast-lightweight-segmentation-fastsam)
+   - [Object Detection (YOLOv8)](#object-detection-yolov8)
+6. [Model Weights](#model-weights)
+7. [Outputs](#outputs)
+8. [Future Work](#future-work)
+9. [Acknowledgments](#acknowledgments)
 
----
+## 1. Overview
+This project integrates the following tools for visual analysis:
 
-## 🚀 Project Overview
-The **Multi-Dimensional Visual Analysis** project is an end-to-end pipeline for analyzing, processing, and visualizing visual data across multiple dimensions. This project integrates modern AI techniques such as:
+- **Depth Anything V2**: Generate accurate depth maps.
+- **Segment Anything (SAM)**: Powerful segmentation model for various objects.
+- **FastSAM**: Lightweight and fast segmentation alternative.
+- **YOLOv8**: Real-time object detection and segmentation.
 
-- Depth Estimation
-- Object Segmentation
-- 3D Reconstruction
-- Object Detection
+## 2. Features
+- **Depth Map Generation**: Analyze depth information from input images.
+- **Object Segmentation**: Mask and identify objects using advanced segmentation models.
+- **Fast Segmentation**: Lightweight segmentation for speed-optimized workflows.
+- **Object Detection**: Detect and classify objects in an image using YOLOv8.
 
-By combining these methods, the project enables advanced visual understanding and analytics.
+## 3. Requirements
+- Python >= 3.8
+- CUDA (optional, for GPU support)
 
----
+### Libraries:
+- PyTorch
+- OpenCV
+- Ultralytics
+- FastSAM
+- Segment Anything
 
-## 🛠️ Features and Tools
+## 4. Installation
+Follow these steps to set up the project:
 
-### Key Features
-- **Depth Estimation**: Generate depth maps using DepthAnythingV2.
-- **Object Segmentation**: Perform image segmentation using SAM (Segment Anything Model) and FastSAM.
-- **3D Reconstruction**: Build sparse and dense 3D representations using COLMAP and Gaussian Splatting.
-- **Object Detection**: Detect and classify objects using YOLO from Ultralytics.
+### Step 1: Clone the Repository
 
-### Tools and Models
-
-| Tool/Library         | Description                                | Repository        |
-|----------------------|--------------------------------------------|-------------------|
-| DepthAnythingV2       | Depth estimation from images               | [DepthAnythingV2](https://github.com/your-repo/DepthAnythingV2) |
-| Segment Anything      | High-performance segmentation              | [SAM](https://github.com/your-repo/SAM) |
-| FastSAM              | Efficient segmentation                     | [FastSAM](https://github.com/your-repo/FastSAM) |
-| Gaussian Splatting   | Realistic 3D reconstruction                | [Gaussian Splatting](https://github.com/your-repo/Gaussian-Splatting) |
-| Ultralytics YOLO      | Object detection and classification        | [Ultralytics](https://github.com/ultralytics/yolov5) |
-
----
-
-## 🛠️ Installation and Setup
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/TamannaAlam/Multi_Dimensional_Visual_Analysis.git
-   cd Multi_Dimensional_Visual_Analysis
-2. Set Up the Environment
-3. Install Dependencies
-
-🔄 Workflow
-Step 1: Depth Estimation with DepthAnythingV2
 ```bash
-python depth_estimation.py --image_path <path_to_image>
-
+git clone https://github.com/TamannaAlam/Multi_Dimensional_Visual_Analysis.git
+cd Multi_Dimensional_Visual_Analysis
