@@ -50,18 +50,18 @@ By combining these methods, the project enables advanced visual understanding an
    git clone https://github.com/TamannaAlam/Multi_Dimensional_Visual_Analysis.git
    cd Multi_Dimensional_Visual_Analysis
 2. Set Up the Environment
-Create and activate a virtual environment:
+3. Install Dependencies
 
+🔄 Workflow
+Step 1: Depth Estimation with DepthAnythingV2
 ```bash
-# Create the environment
-python -m venv venv
+python depth_estimation.py --image_path <path_to_image>
 
 
-# Activate (Windows)
-venv\Scripts\activate
 
-# Activate (Linux/macOS)
-source venv/bin/activate
+
+
+
 
 
 
